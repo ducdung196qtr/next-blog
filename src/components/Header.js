@@ -4,12 +4,22 @@ import Link from 'next/link';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [dark, setDark] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => {};
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      setDark(true);
+      document.documentElement.classList.add('dark');
+    }
   }, []);
+
+  const toggleDark = () => {
+    const next = !dark;
+    setDark(next);
+    document.documentElement.classList.toggle('dark', next);
+    localStorage.setItem('theme', next ? 'dark' : 'light');
+  };
 
   return (
     <header className="site-header">
@@ -29,6 +39,14 @@ export default function Header() {
         </nav>
 
         <div className="header-actions">
+          <button
+            className="icon-btn dark-toggle"
+            onClick={toggleDark}
+            aria-label={dark ? 'Chuyển sáng' : 'Chuyển tối'}
+            title={dark ? 'Chế độ sáng' : 'Chế độ tối'}
+          >
+            {dark ? '☀️' : '🌙'}
+          </button>
           <button
             className={`menu-toggle ${menuOpen ? 'active' : ''}`}
             onClick={() => setMenuOpen(!menuOpen)}
