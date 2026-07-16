@@ -3,7 +3,7 @@ title: "Cách Mạng AI Agent 2026: Khi Trợ Lý Ảo Tự Làm Việc Thay B�
 date: "2026-07-12"
 category: "Công nghệ"
 author: "Đức Dũng"
-image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80"
+image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1600&q=90"
 ---
 
 ## AI Agent là gì?

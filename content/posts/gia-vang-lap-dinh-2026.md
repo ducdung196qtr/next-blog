@@ -3,7 +3,7 @@ title: "Giá Vàng Lập Đỉnh Mới: Có Nên Mua Vàng Lúc Này?"
 date: "2026-07-11"
 category: "Tin tức"
 author: "Đức Dũng"
-image: "https://images.unsplash.com/photo-1610375461246-83df859d849d?w=1200&q=80"
+image: "https://images.unsplash.com/photo-1610375461246-83df859d849d?w=1600&q=90"
 ---
 
 ## Vàng SJC chạm mốc lịch sử

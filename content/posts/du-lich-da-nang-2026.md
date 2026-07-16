@@ -3,7 +3,7 @@ title: "Du Lịch Đà Nẵng 2026: 7 Địa Điểm Mới Không Thể Bỏ Qua
 date: "2026-07-10"
 category: "Đời sống"
 author: "Đức Dũng"
-image: "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=1200&q=80"
+image: "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=1600&q=90"
 ---
 
 ## Đà Nẵng không chỉ có Bà Nà và Hội An

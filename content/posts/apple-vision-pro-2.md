@@ -3,7 +3,7 @@ title: "Apple Vision Pro 2: Nhẹ Hơn 40%, Pin 6 Tiếng — Có Đáng Mua?"
 date: "2026-07-08"
 category: "Công nghệ"
 author: "Đức Dũng"
-image: "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=1200&q=80"
+image: "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=1600&q=90"
 ---
 
 ## Cuộc cách mạng lần 2

@@ -3,7 +3,7 @@ title: "Sức Khỏe Tinh Thần: Nạn 'Burnout' Đang Hủy Hoại Giới Tr�
 date: "2026-07-09"
 category: "Đời sống"
 author: "Đức Dũng"
-image: "https://images.unsplash.com/photo-1493836512293-4c7a9e64c3c7?w=1200&q=80"
+image: "https://images.unsplash.com/photo-1493836512293-4c7a9e64c3c7?w=1600&q=90"
 ---
 
 ## Con số đáng báo động

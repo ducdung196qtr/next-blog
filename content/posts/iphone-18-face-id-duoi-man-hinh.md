@@ -3,7 +3,7 @@ title: "iPhone 18 Sẽ Có Face ID Dưới Màn Hình: Bước Nhảy Lớn Củ
 date: "2026-07-16"
 category: "Công nghệ"
 author: "Đức Dũng"
-image: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=1200&q=80"
+image: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=1600&q=90"
 ---
 
 ## Tin đồn đang dần thành sự thật

@@ -3,7 +3,7 @@ title: "Nvidia RTX 6090: Siêu Phẩm GPU 3nm Sẽ Khiến Game Thủ 'Phát Cu�
 date: "2026-07-14"
 category: "Công nghệ"
 author: "Đức Dũng"
-image: "https://images.unsplash.com/photo-1555680202-c86f0e12f086?w=1200&q=80"
+image: "https://images.unsplash.com/photo-1555680202-c86f0e12f086?w=1600&q=90"
 ---
 
 ## Blackwell 2.0 trên tiến trình 3nm

@@ -3,7 +3,7 @@ title: "Việt Nam Lọt Top 10 Quốc Gia Thu Hút FDI Toàn Cầu 2026"
 date: "2026-07-15"
 category: "Tin tức"
 author: "Đức Dũng"
-image: "https://images.unsplash.com/photo-1527689638836-411945a2b57c?w=1200&q=80"
+image: "https://images.unsplash.com/photo-1527689638836-411945a2b57c?w=1600&q=90"
 ---
 
 ## Bước nhảy vọt ngoạn mục

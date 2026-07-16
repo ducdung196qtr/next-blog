@@ -3,7 +3,7 @@ title: "TSMC Rót 100 Tỷ USD Vào Mỹ: Cuộc Chơi Địa Chính Trị Phía
 date: "2026-07-15"
 category: "Công nghệ"
 author: "Đức Dũng"
-image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80"
+image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=90"
 ---
 
 ## Khoản đầu tư lịch sử
