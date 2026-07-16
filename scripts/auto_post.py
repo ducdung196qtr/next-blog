@@ -26,7 +26,7 @@ def slugify(title):
     slug = re.sub(r'-+', '-', slug)
     return slug[:80]
 
-def create_post(title, content, category="Tin tức", author="NewsPress AI", image=""):
+def create_post(title, content, category="Tin tức", author="Đức Dũng", image=""):
     """Create a Markdown post file"""
     slug = slugify(title)
     date_str = datetime.now().strftime("%Y-%m-%d")
