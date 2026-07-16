@@ -5,7 +5,7 @@ import PostCard from '@/components/PostCard';
 export default function HomePage() {
   const allPosts = getAllPosts();
   const heroPost = allPosts[0];
-  const secondaryPosts = allPosts.slice(1, 3);
+  const secondaryPosts = allPosts.slice(1, 4);
   const gridPosts = allPosts.slice(3, 12);
 
   return (
@@ -15,8 +15,10 @@ export default function HomePage() {
         <div className="container">
           <span className="breaking-label">BREAKING</span>
           <div className="breaking-text">
-            {allPosts.slice(0, 5).map(p => (
-              <Link key={p.slug} href={`/posts/${p.slug}`}>{p.title}</Link>
+            {allPosts.slice(0, 5).map((p, i) => (
+              <span key={p.slug}>
+                <Link href={`/posts/${p.slug}`}>{p.title}</Link>
+              </span>
             ))}
           </div>
         </div>
