@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { getAllPosts } from '@/lib/posts';
 import PostCard from '@/components/PostCard';
 
@@ -26,22 +25,22 @@ export default function HomePage() {
       <main className="container" style={{ paddingTop: 32, paddingBottom: 40 }}>
         {/* Hero section */}
         {heroPost && (
-          <section className="hero-section">
+          <section className="hero">
             <PostCard post={heroPost} variant="hero" />
 
             {secondaryPosts.map(post => (
-              <article key={post.slug} className="hero-secondary">
+              <article key={post.slug} className="hero-side">
                 {post.image && (
-                  <div className="thumb">
-                    <Image src={post.image} alt={post.title} fill sizes="120px" />
+                  <div className="hero-side-img">
+                    <img src={post.image} alt={post.title} />
                   </div>
                 )}
-                <div className="info">
-                  {post.category && <span className="badge">{post.category}</span>}
+                <div className="hero-side-body">
+                  {post.category && <span className="category-tag">{post.category}</span>}
                   <h4><Link href={`/posts/${post.slug}`}>{post.title}</Link></h4>
-                  <div className="meta">
-                    <span>{new Date(post.date).toLocaleDateString('vi-VN')}</span>
-                  </div>
+                  <span className="side-date">
+                    {new Date(post.date).toLocaleDateString('vi-VN')}
+                  </span>
                 </div>
               </article>
             ))}
