@@ -311,7 +311,7 @@ h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; co
   gap: 48px;
   position: absolute;
   white-space: nowrap;
-  animation: ticker 25s linear infinite;
+  animation: ticker 22s linear infinite;
 }
 .breaking-text-track:hover { animation-play-state: paused; }
 .breaking-text-track a {
@@ -319,11 +319,12 @@ h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; co
   font-size: 14px;
   font-weight: 500;
   transition: color 0.2s;
+  flex-shrink: 0;
 }
 .breaking-text-track a:hover { color: #fff; text-decoration: underline; }
 @keyframes ticker {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 /* ---- Hero (Home) ---- */

@@ -16,8 +16,8 @@ export default function HomePage() {
           <span className="breaking-label">BREAKING</span>
           <div className="breaking-text">
             <div className="breaking-text-track">
-              {allPosts.slice(0, 5).map(p => (
-                <Link key={p.slug} href={`/posts/${p.slug}`}>{p.title}</Link>
+              {[...allPosts.slice(0, 5), ...allPosts.slice(0, 5)].map((p, i) => (
+                <Link key={`${p.slug}-${i}`} href={`/posts/${p.slug}`}>{p.title}</Link>
               ))}
             </div>
           </div>
