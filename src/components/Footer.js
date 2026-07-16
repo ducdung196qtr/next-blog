@@ -5,25 +5,43 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="container">
         <div className="footer-grid">
-          <div className="footer-col">
-            <h3>⚡ NewsPress</h3>
-            <p>Blog tin tức tự động — cập nhật mỗi ngày.</p>
+          <div className="footer-brand">
+            <h2>⚡ NewsPress</h2>
+            <p>Blog tin tức chuyên sâu — cập nhật những góc nhìn mới nhất về công nghệ, đời sống, giải trí tại Việt Nam và thế giới.</p>
           </div>
           <div className="footer-col">
             <h4>Danh mục</h4>
-            <Link href="/category/tin-tuc">Tin tức</Link>
-            <Link href="/category/doi-song">Đời sống</Link>
-            <Link href="/category/cong-nghe">Công nghệ</Link>
-            <Link href="/category/giai-tri">Giải trí</Link>
+            <ul>
+              <li><Link href="/category/tin-tuc">Tin tức</Link></li>
+              <li><Link href="/category/doi-song">Đời sống</Link></li>
+              <li><Link href="/category/cong-nghe">Công nghệ</Link></li>
+              <li><Link href="/category/giai-tri">Giải trí</Link></li>
+            </ul>
           </div>
           <div className="footer-col">
-            <h4>Liên kết</h4>
-            <Link href="/about">Giới thiệu</Link>
-            <Link href="/trending">Trending</Link>
+            <h4>Về chúng tôi</h4>
+            <ul>
+              <li><Link href="/about">Giới thiệu</Link></li>
+              <li><Link href="/trending">Trending</Link></li>
+              <li><Link href="/">Trang chủ</Link></li>
+            </ul>
+          </div>
+          <div className="footer-col">
+            <h4>Liên hệ</h4>
+            <ul>
+              <li>📧 contact@newspress.vn</li>
+              <li>📍 Việt Nam</li>
+              <li>🌐 Theo dõi chúng tôi</li>
+            </ul>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} NewsPress. Powered by Next.js & Vercel.</p>
+          <p>&copy; {new Date().getFullYear()} NewsPress. Tác giả: <strong>Đức Dũng</strong>. Mọi quyền được bảo lưu.</p>
+          <div className="footer-social">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="YouTube">▶️</a>
+          </div>
         </div>
       </div>
     </footer>

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function PostCard({ post, variant = 'default' }) {
   const date = new Date(post.date).toLocaleDateString('vi-VN', {
@@ -8,19 +7,19 @@ export default function PostCard({ post, variant = 'default' }) {
 
   if (variant === 'hero') {
     return (
-      <article className="hero-card">
+      <article className="hero-main">
         {post.image && (
-          <div className="hero-img">
-            <Image src={post.image} alt={post.title} fill sizes="(max-width: 768px) 100vw, 60vw" priority />
+          <div className="hero-main-img">
+            <img src={post.image} alt={post.title} />
+            <div className="hero-main-overlay" />
           </div>
         )}
-        <div className="hero-body">
-          {post.category && <span className="badge">{post.category}</span>}
+        <div className="hero-main-body">
+          {post.category && <span className="category-tag">{post.category}</span>}
           <h2><Link href={`/posts/${post.slug}`}>{post.title}</Link></h2>
-          <p className="hero-excerpt">{post.excerpt?.slice(0, 150)}...</p>
-          <div className="meta">
-            <span>{date}</span>
-            {post.author && <span>• {post.author}</span>}
+          <p>{post.excerpt}</p>
+          <div className="byline">
+            {post.author} &bull; {date}
           </div>
         </div>
       </article>
@@ -31,16 +30,16 @@ export default function PostCard({ post, variant = 'default' }) {
     <article className="post-card">
       {post.image && (
         <Link href={`/posts/${post.slug}`} className="card-img">
-          <Image src={post.image} alt={post.title} width={600} height={400} />
+          <img src={post.image} alt={post.title} loading="lazy" />
         </Link>
       )}
       <div className="card-body">
-        {post.category && <span className="badge">{post.category}</span>}
+        {post.category && <span className="category-tag">{post.category}</span>}
         <h3><Link href={`/posts/${post.slug}`}>{post.title}</Link></h3>
-        <p className="card-excerpt">{post.excerpt?.slice(0, 100)}...</p>
-        <div className="meta">
+        <p>{post.excerpt}</p>
+        <div className="card-footer">
           <span>{date}</span>
-          {post.views && <span>• 👁 {post.views}</span>}
+          <span>{post.author}</span>
         </div>
       </div>
     </article>
