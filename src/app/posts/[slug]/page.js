@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getPostBySlug, getAllPosts } from '@/lib/posts';
 
@@ -57,7 +56,7 @@ export default function PostPage({ params }) {
         {/* Featured image */}
         {post.image && (
           <div className="post-featured">
-            <Image src={post.image} alt={post.title} width={800} height={450} priority />
+            <img src={post.image} alt={post.title} className="featured-img" />
           </div>
         )}
 
