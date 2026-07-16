@@ -70,10 +70,10 @@ html.dark {
   --accent: #fbbf24;
   --accent-subtle: #2d2110;
 
-  --bg: #1a1f2e;
-  --bg-soft: #232839;
-  --bg-card: #262b3a;
-  --bg-footer: #11141f;
+  --bg: #1e2433;
+  --bg-soft: #242a3a;
+  --bg-card: #282e3e;
+  --bg-footer: #161b26;
 
   --text: #c8cfda;
   --text-strong: #e8edf5;
@@ -248,7 +248,7 @@ h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; co
 
 /* ---- Breaking News ---- */
 .breaking-bar {
-  background: linear-gradient(135deg, #1a56db 0%, #2563eb 50%, #1d4ed8 100%);
+  background: #1e3a5f;
   padding: 14px 0;
   position: relative;
   overflow: hidden;
@@ -301,33 +301,29 @@ h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; co
   50% { opacity: 0.2; }
 }
 .breaking-text {
+  overflow: hidden;
+  flex: 1;
+  position: relative;
+  height: 22px;
+}
+.breaking-text-track {
   display: flex;
-  gap: 4px;
-  flex-wrap: wrap;
-  align-items: center;
-  line-height: 1.5;
+  gap: 48px;
+  position: absolute;
+  white-space: nowrap;
+  animation: ticker 25s linear infinite;
 }
-.breaking-text a {
-  color: rgba(255,255,255,0.92);
-  font-size: 13.5px;
+.breaking-text-track:hover { animation-play-state: paused; }
+.breaking-text-track a {
+  color: rgba(255,255,255,0.95);
+  font-size: 14px;
   font-weight: 500;
-  padding: 3px 12px;
-  border-radius: 4px;
-  transition: all 0.2s;
+  transition: color 0.2s;
 }
-.breaking-text a:hover {
-  background: rgba(255,255,255,0.15);
-  color: #fff;
-}
-.breaking-text a::after {
-  content: '|';
-  color: rgba(255,255,255,0.3);
-  margin-left: 12px;
-}
-.breaking-text a:last-child::after { display: none; }
-.breaking-bar .sep {
-  color: rgba(255,255,255,0.3);
-  font-size: 12px;
+.breaking-text-track a:hover { color: #fff; text-decoration: underline; }
+@keyframes ticker {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
 }
 
 /* ---- Hero (Home) ---- */
